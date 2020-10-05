@@ -1,0 +1,22 @@
+{
+    "name": "tetsuo-demo-template",
+    "version": "1.0.0",
+    "description": "tetsuo demo template",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "rm -rf .cache && rm -rf dist && parcel build src/index.html --no-source-maps",
+        "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@SolidSolutionsDev/tetsuo": "^1.6.2",
+        "parcel": "^1.12.4",
+        "three": "^0.117.1"
+    },
+    "devDependencies": {
+        "parcel-plugin-static-files-copy": "^2.5.0"
+    }
+}
